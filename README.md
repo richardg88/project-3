@@ -67,7 +67,7 @@ This project was deployed using Code Institute's mock terminal for Heroku.
 ## Credits
 
 * Code Institute for the deployment terminal
-* Youtube for game idea 
+* Youtube for game idea [Can be found here](https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg)
 
 
 
