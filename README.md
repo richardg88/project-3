@@ -1,31 +1,78 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Welcome to Guess The Number
 
-Welcome richardg88,
+You can play as much as you like and see how quickly you can guess the correct number. Hints if you are too high or too low are given to help you along.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+My live site can be [Viewed Here](https://project-3-number-guess.herokuapp.com)
 
-## Reminders
+![python-responsive-project-3](https://user-images.githubusercontent.com/100090476/179019168-fccf0d92-408b-4504-982e-23d3fd089b94.png)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## About The Game and How To Play
 
-## Creating the Heroku app
+Guess The Number is a fun and engaging game. To start off you must pick a number, the higher the number you choose, the harder you will make the game for yourself. As remember, you must guess one correct number chosen my the computer between 0 and whatever number you fist choose. When you guess the number, the game will tell you if you have guessed to high or too low. Finally, once you have guessed correctly the game will tell you!
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Features
 
-1. `heroku/python`
-2. `heroku/nodejs`
+![screen-shot-1-python](https://user-images.githubusercontent.com/100090476/179019995-7a3952a0-3bc9-4587-a7e4-7c6e0fae144a.png)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+```
+Computer asks for a number to use as the range
+Player guesses what the number is
+```
+![screen-shot-2-python](https://user-images.githubusercontent.com/100090476/179021629-0976017b-752f-4bd9-96f4-e181745b7cb1.png)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+```
+Computer tells player if their guess was too high or low
+```
 
-Connect your GitHub repository and deploy as normal.
+![screen-3-python](https://user-images.githubusercontent.com/100090476/179022250-8d9eea09-c66a-4540-ae6b-dfaa74b3f6ac.png)
 
-## Constraints
+```
+Input validation and testing stop the player entering anything except numbers
+```
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Testing
 
------
-Happy coding!
+I have manually tested this project by doing the following:
+
+* Passed the code through PEP8 linter and confirmed there are no problems
+* Given invalid inputs: strings when numbers are expected
+* Tested in my local terminal and the Code Institute Heroku terminal
+
+### Bugs
+
+* When i ran the code through the PEP8 I discovered there was `white space within my code`
+  * Solution was to add /n at the end of some print statemnts and to backspace on other lines of code
+
+### Remaining Bugs
+
+* No bugs remaining
+
+### Validator Testing
+
+* Passed PEP8 validator with no errors on final test
+
+![python-validator-pass-project-3](https://user-images.githubusercontent.com/100090476/179025386-71f2123b-fe04-405d-8358-220b776535ea.png)
+
+## Deployment
+
+This project was deployed using Code Institute's mock terminal for Heroku.
+
+* Steps for deployment:
+  * Fork or clone this repository
+  * Create a new Heroku app
+  * Set the buildbacks to `Python` and `NodeJS` in that exact order
+  * Link the Heroku app to the repository
+  * Click on _Deploy_
+
+## Credits
+
+* Code Institute for the deployment terminal
+* Youtube for game idea 
+
+
+
+
+
+
+
+
